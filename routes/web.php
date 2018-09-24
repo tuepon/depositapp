@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TellersController@index');
+
+Route::resource('teller', 'TellersController');
+
